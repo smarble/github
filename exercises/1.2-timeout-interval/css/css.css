@@ -1,0 +1,263 @@
+/*
+Weeki Wachee
+Colors:
+color: DarkMagenta;
+Blue: 0001ff
+HOt pink: fb24a6
+lightest blue: cbeffb
+*/
+
+html {
+  font-family: arial, verdana, sans-serif;
+  font-size: normal;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url(images/blackspace_horizontal.jpg);
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+.mermaid_circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #0001ff;
+  border-width: thin;
+}
+
+.center-layout {
+  display: block;
+  margin: 0 auto;
+}
+
+.background_body {
+  background-image: url(images/cosmic_pink_800.jpg);
+  background-size: cover;
+}
+
+h1 {
+  padding: 25% 5% 0% 10%;
+  font-size: 400%;
+  color: DarkMagenta;
+  text-shadow: 1px 1px 1px #0001ff;
+}
+
+.blurb {
+  padding: 5% 10% 20% 10%;
+  font-size: 130%;
+}
+
+.menu_icon {
+  width: 20%;
+}
+
+footer {
+  background-image: url(images/blackspace_horizontal.jpg);
+  width: 100%;
+  margin-bottom: -10%;
+}
+
+.footer_media_buttons {
+  list-style-type: none;
+}
+
+.mediabutton_list {
+  display: inline;
+}
+
+.media_buttons {
+  width: 30%;
+}
+
+@media screen and (max-width: 719px) {
+.image-cropper {
+  display: none;
+}
+}
+
+/* 720 plus  720 plus  720 plus  720 plus  720 plus
+720 plus  720 plus  720 plus  720 plus  720 plus
+720 plus  720 plus  720 plus  720 plus  720 plus */
+@media screen and (min-width: 720px) {
+header  {
+  height: 30rem;
+  margin-bottom: -40%;
+}
+
+.menu_icon {
+  width: 10%;
+  margin: 3% 0% 0% 1%;
+}
+
+.mermaid_circle {
+  width: 60%;
+}
+
+h1 {
+  margin-top: 2%;
+  padding: 0% 5% 0% 5%;
+  font-size: 350%;
+}
+
+.blurb {
+  margin: 0% 0% 0% 43%;
+  padding: 2% 5% 10% 5%;
+}
+
+footer {
+  background-image: none;
+  width: 100%;
+  margin: 0% 0% 0% 35%;
+}
+
+.footer_media_buttons {
+  list-style-type: none;
+}
+
+.mediabutton_list {
+  display: inline;
+}
+
+.media_buttons {
+  width: 7%;
+}
+
+.image-cropper {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #0001ff;
+  border-width: thin;
+  text-align: center;
+}
+
+.bottom_images {
+  font-size: 200%
+}
+
+.div_chelsea {
+  background-image: url(images/mermaid_chelsea2.jpg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  margin-left: 2%;
+}
+
+.div_bubbles {
+  background-image: url(images/mermaid_bubbles.jpg);
+  background-position: 50% 50%;
+  background-size: 109% 109%;
+  float:right;
+  margin-right: 2%;
+}
+
+.h2 {
+  margin-top: 43%;
+  color: #F8F8FF;
+  text-shadow: 2px 2px 2px #000000;
+  text-decoration: none;
+  font-size: 150%;
+  line-height: 650%;
+}
+}
+
+@media screen and (max-width: 1079px) {
+ .div_kristi, .div_victoria, .div_seahorse {
+  display: none;
+ }
+ }
+
+/* 1080 plus  1080 plus  1080 plus  1080 plus
+1080 plus  1080 plus  1080 plus  1080 plus
+1080 plus  1080 plus  1080 plus  1080 plus*/
+
+@media screen and (min-width: 1080px) {
+.mermaid_circle {
+  margin: 20% 0% 2% 19%;
+}
+
+  h1 {
+  margin: 0% 0% 0% 2%;
+  padding: 0%;
+  font-size: 525%;
+}
+
+.blurb {
+  font-size: 150%
+}
+
+.h2 {
+  font-size: 100%;
+  line-height: 570%;
+}
+
+.image-cropper {
+  width: 180px;
+  height: 180px;
+}
+
+.1080bottom-circles {
+  width: 100%
+}
+
+.bottom_images {
+  margin: 0% 1% 2% 1%;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.div_chelsea {
+  margin-left: 4%;
+}
+
+.div_bubbles {
+  float: none;
+}
+
+.div_kristi {
+  background-image: url(images/mermaid_kristi.jpg);
+}
+
+.div_victoria {
+  background-image: url(images/mermaid_victoria.jpg);
+}
+
+.div_seahorse {
+  background-image: url(images/mermaid_seahorse.jpg);
+}
+
+footer {
+  background-image: url(images/blackspace_horizontal.jpg);
+  width: 100%;
+  margin: 0%;
+}
+
+.footer_media_buttons {
+  list-style-type: none;
+}
+
+.mediabutton_list {
+  display: inline;
+}
+
+.media_buttons {
+  width: 7%;
+}
+
+.facebook_button {
+  margin-left: 37%;
+}
+}
