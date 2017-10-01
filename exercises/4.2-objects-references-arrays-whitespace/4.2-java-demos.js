@@ -207,7 +207,7 @@ counties.pop();
 "Coos"
 
 counties
-(5) ["Belknap", "Strafford", "Cheshire", "Rockingham", "Merrimack"]
+(5) ["Belknap ", "Strafford", "Cheshire", "Rockingham", "Merrimack"]
 
 // .shift and .unshift do the same, but adding and taking off from the FRONT of an array
 
