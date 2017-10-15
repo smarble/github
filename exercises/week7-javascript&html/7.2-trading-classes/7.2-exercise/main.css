@@ -15,7 +15,6 @@ Light Gray: #D5DBD8
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 *,
@@ -25,12 +24,15 @@ html {
 
 
 div {
+  width: 500px;
+  height: 500px;
   font-size: 14px;
   background-color: red;
-  color: #D5DBD8;
+  color: black;
+  transition: background-color 2s;
 }
 
-.divClass {
+.jsDivClass {
 background-color: green;
 color: red;
 }
