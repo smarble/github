@@ -28,13 +28,14 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
       postHowMuch = document.getElementsByTagName("article");
 
   if (howMuchPrompt < 100) {
+    // where are we creating this text node?
     var donationAmount = document.createTextNode("Thank you for your donation of $" + howMuchPrompt + ".");
   }
   else {
     var donationAmount = document.createTextNode("Thank you for your very generous donation!");
     makeButtonsRed.setAttribute("style", "color: red;");
 
-  for (i = 0; i < postGenerosity.length; i++) {
+  for (i = 0; i < postHowMuch.length; i++) {
     if (howMuchPrompt >= 100) {
       postHowMuch[i].className ="generous-donation";
     }
