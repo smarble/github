@@ -24,26 +24,31 @@ var churchillSpeech = {
 document.getElementById('BtnDonate').addEventListener('click', function(){
 //Code in here executes when the user clicks the "Donate" button.
   var howMuchPrompt = window.prompt("How much would you like to donate?"),
-      makeButtonsRed = document.createElement("h3"),
+      makeThingsRed = document.createElement("h3"),
       postHowMuch = document.getElementsByTagName("article");
 
   if (howMuchPrompt < 100) {
-    // where are we creating this text node?
     var donationAmount = document.createTextNode("Thank you for your donation of $" + howMuchPrompt + ".");
   }
   else {
     var donationAmount = document.createTextNode("Thank you for your very generous donation!");
-    makeButtonsRed.setAttribute("style", "color: red;");
+    makeThingsRed.setAttribute("style", "color: red;");
 
-  for (i = 0; i < postHowMuch.length; i++) {
     if (howMuchPrompt >= 100) {
-      postHowMuch[i].className ="generous-donation";
-    }
-  }
+      for (i = 0; i < postHowMuch.length; i++) {
+        postHowMuch[i].className ="generous-donation";
+     }
+   }
+    // for (i = 0; i < postHowMuch.length; i++) {
+    //   if (howMuchPrompt >= 100) {
+    //   postHowMuch[i].className ="generous-donation";
+    // }
+  //}
 };
-
-makeButtonsRed.appendChild(donationAmount);
-SideNav.appendChild(makeButtonsRed);
+// This is placing where the strings will go. Whichever string is set to run
+// from the if/else scenario above. so only one of these commands below will run.
+makeThingsRed.appendChild(donationAmount);
+SideNav.appendChild(makeThingsRed);
 });
 
 

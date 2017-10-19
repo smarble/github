@@ -1,0 +1,22 @@
+div {
+  height: 700px;
+  width: 700px;
+}
+
+.colorRed {
+  background-color: red;
+}
+
+.colorGreen {
+  background-color: green;
+}
+
+.colorPurpleYellow {
+    background: purple; /* For browsers that do not support gradients */
+    background: linear-gradient(purple, yellow); /* Standard syntax */
+}
+
+.colorBlueOrange {
+    background: blue; /* For browsers that do not support gradients */
+    background: linear-gradient(blue, orange); /* Standard syntax */
+}
