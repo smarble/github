@@ -1,22 +1,22 @@
 div {
+  transition: all 1s ease;
+  margin: 300px;
   height: 700px;
   width: 700px;
 }
 
 .colorRed {
+  color: purple;
   background-color: red;
 }
 
-.colorGreen {
-  background-color: green;
-}
-
 .colorPurpleYellow {
-    background: purple; /* For browsers that do not support gradients */
-    background: linear-gradient(purple, yellow); /* Standard syntax */
+    color: red;
+    background: purple;
 }
 
-.colorBlueOrange {
-    background: blue; /* For browsers that do not support gradients */
-    background: linear-gradient(blue, orange); /* Standard syntax */
+p{
+  padding: 25%;
+  font-size: 300%;
+  text-align: center
 }
