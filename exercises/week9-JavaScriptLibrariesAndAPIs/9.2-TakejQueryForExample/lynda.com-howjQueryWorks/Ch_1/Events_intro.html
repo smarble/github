@@ -1,0 +1,46 @@
+<!-- https://www.lynda.com/jQuery-tutorials/Handling-events/494389/539698-4.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Event Handling</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+
+    <script type="text/javascript">
+// In this function we are using the "on" function to listen for three events, mousemove, etc... and we've got callback functions (defined later) after the comma to handle each of these events.
+            $("document").ready(function() {
+            $("#example").on("mousemove", onMouseOver);
+            $("#example").on("click", onMouseClick);
+            $("#example").on("mouseleave", onMouseLeave);
+        });
+// defining the callback functions used above (onMouseover, etc...). The jquery unified object (evt) is used here. It's a way for jquery to unify a set of event information across browsers. That get's passed in here as an argument (in parentheses)
+        function onMouseOver(evt) {
+            $("#example").text(evt.type + ": " + evt.pageX + ", " + evt.pageY + "\n" +
+                              "Button: " + evt.which + " Key: " + evt.metaKey);
+        }
+        function onMouseClick(evt) {
+            $("#example").text(evt.type + ": " + evt.pageX + ", " + evt.pageY);
+// Here use the off function to turn off the onmouseover event listener function
+            $("#example").off("mousemove", onMouseOver);
+        }
+        function onMouseLeave(evt) {
+            $("#example").text("mouseleave");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>jQuery Event Handling</h1>
+    <div id="content">
+
+        <p>jQuery normalizes an event structure across browsers and provides cross-browser consistency for properties such as
+            the event name, the page coordinates of the mouse, the element where the event originated along with any other
+            element related to the event, and information such as whether a meta-key or specific mouse button was pressed.</p>
+        <div id="example">
+        </div>
+    </div>
+</body>
+
+</html>
