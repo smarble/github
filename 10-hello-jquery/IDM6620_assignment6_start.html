@@ -174,8 +174,8 @@ When you’re finished, post the HTML/JS and images up on your server space and 
   $("document").ready(function() {
     /*selecting anchor tags with jQuery and adding a click funtion*/
     $("a").click(function() {
-        /*take all anchors and attach the following css*/
-        $("a").addClass("redBackground");
+        /*take "this" (the current object of this function) and attach the following css*/
+        $(this).addClass("redBackground");
     });
     /*When #firstHeader is clicked, this function is applied*/
     $("#firstHeader").click(function() {
