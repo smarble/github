@@ -495,7 +495,7 @@ toggeClass(className | function): add or remove the given CSS class to the eleme
     <link rel="stylesheet" href="../style.css" />
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
-        $("document").ready(function() {
+        $("document").ready (function() {
             $("#setProp").click(function(evt) {
                 $("#example p").css("text-decoration", "overline")
                                 .css("font-size", "+=1pt");
@@ -683,6 +683,8 @@ To retrieve the data:
     data( key )
     // or call with no parameters at all. In that case it will return a javaScript object containing all of the data that's currently on the element.
     data()
+
+
 
 
 

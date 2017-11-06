@@ -15,6 +15,7 @@
             $("#products h2.product-name[data-type='proteinbar']").css("background-color", "#4E0F50");
             // "querySelector" returns the first Element within the document that matches the specified selector, or group of selectors, or null if no matches are found. This line says find #cbVitamins and add an event listener. The event listener has arguments: 'change' with the following function.
             document.querySelector('#cbVitamins').addEventListener('change',function (evt) {
+                This var, defined below,
                 updateProductView("vitamins", evt.target.checked);
             });
             document.querySelector('#cbMineralWater').addEventListener('change',function (evt) {
