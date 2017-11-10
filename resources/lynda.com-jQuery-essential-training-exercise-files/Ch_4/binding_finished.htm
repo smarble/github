@@ -23,14 +23,21 @@
                 $("#evtTarget").html("<p>You shut off the hover effect!</p>");
                 $("#evtTarget").removeClass("highlighted");
             });
-            
-            $("#textEntry").on("keypress", function(evt) {
-                $("#keyPress").text(String.fromCharCode(evt.charCode));
+
+            $("#textEntry").on("keypress", function(eventObjectName) {
+                // console.log(evt);
+                // //$("#keyPress").text(evt.charCode);
+                // 
+                // var number = eventObject.charCode;
+                // var letter = String.fromCharCode(number);
+                // $('#keyPress').text(letter);
+
+                $("#keyPress").text(String.fromCharCode(eventObjectName.charCode));
             });
         });
 
         function highlight(evt) {
-            $("#evtTarget").toggleClass("highlighted");        
+            $("#evtTarget").toggleClass("highlighted");
         }
     </script>
     <style type='text/css'>

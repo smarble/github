@@ -1,0 +1,28 @@
+Lesson 11.1 - The Main (jQuery) Event
+
+Item
+Intro to Events in jQuery
+jQuery event handling is great because it allows us to utilize JavaScript methods that have great cross-browser compatibility. If we were to use plainJavaScript for all of our event handling we may have to include extra code to handle specific browser instances. This is just one of the reasons why jQuery is used to frequently to handle our JavaScript needs.
+
+In this lesson:
+
+jQuery event handling features
+Binding and unbinding events
+Event helper methods
+Using the jQuery event object
+
+Item
+Lesson 11.1 - Understanding the jQuery event handling features
+Go to jQuery Essential Training on lynda.com:
+
+https://www.lynda.com/jQuery-tutorials/jQuery-Essential-Training-REVISION-Q3-2016/494389-2.html
+
+Complete the "4. jQuery Events" lessons, starting with "jQuery event handling features" and ending with "Using the jQuery event object".
+
+-----------------------------------------------------
+Binding and Unbinding Events Example
+
+jQuery makes it simple to start and stop listening to events using the on() and off() functions. You just need to supply the name of the event you want to listen to and a function to handle it
+
+on()
+off()
