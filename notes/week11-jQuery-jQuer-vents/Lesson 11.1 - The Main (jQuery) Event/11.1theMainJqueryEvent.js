@@ -39,32 +39,39 @@ There are several ways to use on: https://api.jquery.com/on/
     <link rel="stylesheet" href="../style.css" />
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
-        // Short hand function of declaring document ready by passing the handler function directly to the jquery object.
         $(function() {
-            // using "on" to attach event listeners to #evtTarget. we'll use the mouseover and mouseleave events to change the color of the div using the "highlight" function defined below.
+            // Older versions of jQuery used the "bind" and "unbind" functions
+            // $("#evtTarget").bind("mouseover mouseleave", highlight);
+
+            // $("#evtTarget").bind("click", function(evt) {
+            //     $("#evtTarget").unbind("mouseover mouseleave", highlight);
+            //     $("#evtTarget").html("<p>You shut off the hover effect!</p>");
+            // });
+
+            // jQuery as of 1.7 provides the universal "on" and "off" functions
             $("#evtTarget").on("mouseover mouseleave", highlight);
-            // using "on" on #evtTarget, to attach an event handler. on Click, do this anonymous function with an event handler:
+
             $("#evtTarget").on("click", function(evt) {
-                // Remove (off) the event handlers listed from #evtTarget
                 $("#evtTarget").off("mouseover mouseleave", highlight);
-                // #evtTarget, replace the html, add this paragraph
                 $("#evtTarget").html("<p>You shut off the hover effect!</p>");
-                // #evtTarget, remove the class "highlighted" just in case it is all ready there when the user clicks.
                 $("#evtTarget").removeClass("highlighted");
             });
-            // using "on" to attach an event listener to #evtTarget with a function.
+
             $("#textEntry").on("keypress", function(evt) {
-                // referencing the #keyPress span, we are adding this text:  (String.fromCharCode(evt.charCode). I do not understand what this in the parentheses means. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode.
+                console.log(evt);
+                //$("#keyPress").text(evt.charCode);
+
+                // var number = eventObject.charCode;
+                // var letter = String.fromCharCode(number);
+                // $('#keyPress').text(letter);
+
                 $("#keyPress").text(String.fromCharCode(evt.charCode));
             });
         });
 
         function highlight(evt) {
-            // toggles the class "highlighted" on and off.
             $("#evtTarget").toggleClass("highlighted");
         }
-        });
-
     </script>
     <style type='text/css'>
         .highlighted {
@@ -87,7 +94,6 @@ There are several ways to use on: https://api.jquery.com/on/
 </body>
 
 </html>
-
 
 
 -----------------------------------------------------------
@@ -179,6 +185,8 @@ resize(): fired on the window object when the browser window resizes
 -----------------------------------------
 
 Using the jQuery Event Object
+https://www.lynda.com/jQuery-tutorials/Using-jQuery-event-object/494389/539725-4.html
+
 
 The jQuery Event object contains detailed information about each event that occurs in the page.
 
@@ -188,13 +196,18 @@ jQuery normalizes the following properties for cross-browser consistency:
 https://api.jquery.com/category/events/event-object/
 
 target:  where the event originated from
-relatedTarget:   in some cases another element on the page, or the pae itself
+relatedTarget:   in some cases another element on the page, or the page itself
 pageX:   Where the mouse was when the event occured
 pageY
 which:   event specific. in the event of a key press, will tell you which key was typed.
 metaKey:   on mac it is the "cmd" key, on windows it is the "windows" key. Its a boolean property that you can use to see if that key was held down: it is either true or false.
 
+The following properties are also copied to the event object, though some of their values may be undefined depending on the event:
 
+altKey, bubbles, button, buttons, cancelable, char, charCode, clientX, clientY, ctrlKey, currentTarget, data, detail, eventPhase, key, keyCode, metaKey, offsetX, offsetY, originalTarget, pageX, pageY, relatedTarget, screenX, screenY, shiftKey, target, toElement, view, which
+
+
+To access event properties not listed above, use the "event.originalEvent" object.
 
 
 <!DOCTYPE html>
@@ -207,11 +220,11 @@ metaKey:   on mac it is the "cmd" key, on windows it is the "windows" key. Its a
     <script type="text/javascript">
         $(function() {
             // Assigning event handlers to the 3 divs on the web page. In these next 3 event handler functions, an individual data object is passed as an aragument, wich will be passed to the Event handler. In each of these 3 we are supplying an object that just contains a name property wich represents the name of the Div element.
-            $("#Div1").on("click dblclick", { name: "Div 1" }, function(evt) {
+            $("#Div1").on("click dblclick", { name: "Div 1" }, function(EventObjectName) {
                 // defined below. Takes values from the Event Object and displays them in the UI.
-                updateEventDetails(evt);
+                updateEventDetails(EventObjectName);
                 // stopPropagation Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event.
-                evt.stopPropagation();
+                EventObjectName.stopPropagation();
             });
             $("#Div2").on("click dblclick", { name: "Div 2" }, function(evt) {
                 updateEventDetails(evt);

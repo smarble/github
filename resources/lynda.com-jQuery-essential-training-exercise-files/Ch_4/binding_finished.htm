@@ -24,15 +24,15 @@
                 $("#evtTarget").removeClass("highlighted");
             });
 
-            $("#textEntry").on("keypress", function(eventObjectName) {
-                // console.log(evt);
-                // //$("#keyPress").text(evt.charCode);
-                // 
+            $("#textEntry").on("keypress", function(evt) {
+                console.log(evt);
+                //$("#keyPress").text(evt.charCode);
+
                 // var number = eventObject.charCode;
                 // var letter = String.fromCharCode(number);
                 // $('#keyPress').text(letter);
 
-                $("#keyPress").text(String.fromCharCode(eventObjectName.charCode));
+                $("#keyPress").text(String.fromCharCode(evt.charCode));
             });
         });
 
