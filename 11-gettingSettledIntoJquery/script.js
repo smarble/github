@@ -33,5 +33,5 @@ $(document).ready(function () {
   $("#sidebar_content_1 h2").click(function() {
 		  $("#sidebar_content_1 ul").slideToggle("slow")
 	});
-  
+
 }) //end of onready function
