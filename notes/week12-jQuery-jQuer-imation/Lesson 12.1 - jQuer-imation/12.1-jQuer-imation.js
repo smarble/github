@@ -396,3 +396,87 @@ All Properties
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+=====================================================================
+Optional
+Using the basic Ajax function
+The $.ajax() function is used to perform basic AJAX requests. It can be customized using a variety of parameters.
+
+Complete the "6. AJAX Operations" lessons, starting with "jQuery and AJAX" and ending with "Using global AJAX handlers".
+
+https://www.lynda.com/jQuery-tutorials/jQuery-AJAX/494389/539735-4.html
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Using the Ajax Function</title>
+  <style>
+    #ajaxContent {
+      padding: 5pt;
+      border: 2px dashed lightgray;
+    }
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+  <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+  <script type="text/javascript">
+    $("document").ready(function() {
+        getData();
+      });
+
+      function getData() {
+        $.ajax({
+          // the URL for the request
+          url: "testdata.txt",
+
+          // whether this is a POST or GET request
+          type: "GET",
+
+          // the type of data we expect back
+          dataType : "text",
+
+          // function to call for success
+          success: successFn,
+
+          // function to call on an error
+          error: errorFn,
+
+          // code to run regardless of success or failure
+          complete: function( xhr, status ) {
+            console.log("The request is complete!");
+          }
+        });
+      }
+
+      function successFn(result) {
+        console.log("Setting result");
+      	$("#ajaxContent").append(result);
+      }
+      function errorFn(xhr, status, strErr) {
+        console.log("There was an error!");
+      }
+  </script>
+</head>
+
+<body>
+  <h1>Using the basic Ajax function</h1>
+  <div id="content">
+
+    <p>The <code>$.ajax()</code> function is used to perform basic AJAX requests. It can be customized using a variety of parameters.</p>
+    <p>If successful, the returned data will appear here:</p>
+    <p id="ajaxContent"></p>
+  </div>
+</body>
+
+</html>

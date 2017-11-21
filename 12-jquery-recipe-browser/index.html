@@ -1,36 +1,96 @@
 
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Sandra's Wk12 Assignment </title>
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-      <header class="main-header">
-        <h1>Recipies</h1>
-      </header>
-      <nav class="side-nav">
-        <a href="#" id="button1" class="nav-button">Sarah's Applesauce</a>
-        <a href="#" id="button2" class="nav-button">Morning Glory Muffins I</a>
-        <a href="#" id="button3" class="nav-button">O.O.T.W. Turkey Brine</a>
-        <a href="#" id="button4" class="nav-button">White Chili IV</a>
-        <a href="#" id="button5" class="nav-button">Glenn's Marinated Pork</a>
-        <a href="#" id="button6" class="nav-button">Mojito Fruit Salad</a>
-        <a href="#" id="button7" class="nav-button">Vegan Hot and Sour Soup</a>
-      </nav>
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Sandra's Wk12 Assignment </title>
+      <link href="css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header class="main-header">
+        <h1>Recipes</h1>
+        </header>
+
+        <nav id="side-nav" class="side-nav">
+          <a href="#" id="button1" class="nav-button" data-rel="recipe1">Sarah's Applesauce</a>
+          <a href="#" id="button2" class="nav-button" data-rel="recipe2">Morning Glory Muffins I</a>
+          <a href="#" id="button3" class="nav-button" data-rel="recipe3">O.O.T.W. Turkey Brine</a>
+          <a href="#" id="button4" class="nav-button" data-rel="recipe4">White Chili IV</a>
+          <a href="#" id="button5" class="nav-button" data-rel="recipe5">Glenn's Marinated Pork</a>
+          <a href="#" id="button6" class="nav-button" data-rel="recipe6">Mojito Fruit Salad</a>
+          <a href="#" id="button7" class="nav-button" data-rel="recipe7">Vegan Hot and Sour Soup</a>
+          </nav>
+
       <section class="main-content">
-        <article id="recipe1">
-          <h2>Sarah's Applesauce</h2>
-              <h3>Ingredients:</h3>
-              <ul>
-                <li>4 apples - peeled, cored and chopped</li>
-                <li>3/4 cup water</li>
-                <li>1/4 cup white sugar</li>
-                <li>1/2 teaspoon ground cinnamon</li>
-              </ul>
+          <article id="recipe1" class="recipeArticle">
+              <h2>Sarah's Applesauce</h2>
+                  <h3>Ingredients:</h3>
+                  <ul>
+                    <li>4 apples - peeled, cored and chopped</li>
+                    <li>3/4 cup water</li>
+                    <li>1/4 cup white sugar</li>
+                    <li>1/2 teaspoon ground cinnamon</li>
+                  </ul>
               <h3>Directions:</h3>
               <p>In a saucepan, combine apples, water, sugar, and cinnamon. Cover, and cook over medium heat for 15 to 20 minutes, or until apples are soft. Allow to cool, then mash with a fork or potato masher.</p>
-        </article>
+          </article>
+
+              <article id="recipe2" class="recipeArticle">
+                    <h2>Morning Glory Muffins</h2>
+
+                    <div id="criticalinfo">
+                        <h3>Ingredients:</h3>
+
+                        <ul>
+                            <li>1 1/2 cups all-purpose flour</li>
+                            <li>1/2 cup whole wheat flour</li>
+                            <li>1 1/4 cups white sugar</li>
+                            <li>1 tablespoon ground cinnamon</li>
+                            <li>2 teaspoons baking powder</li>
+                            <li>1/2 teaspoon baking soda</li>
+                            <li>1/2 teaspoon salt</li>
+                            <li>2 cups grated carrots</li>
+                            <li>1 apple - peeled, cored, and chopped</li>
+                            <li>1 cup raisins</li>
+                            <li>1 egg</li>
+                            <li>2 egg whites</li>
+                            <li>1/2 cup apple butter</li>
+                            <li>1/4 cup vegetable oil</li>
+                            <li>1 tablespoon vanilla extract</li>
+                            <li>2 tablespoons chopped walnuts</li>
+                            <li>2 tablespoons toasted wheat germ</li>
+                        </ul>
+
+                        <h3>Directions:</h3>
+
+                        <ol>
+                        <li> Preheat oven to 375 degrees F (190 degrees C). Lightly oil 18 muffin cups, or coat with nonstick cooking spray.</li>
+                        <li> In a medium bowl, whisk together eggs, egg whites, apple butter, oil and vanilla.</li>
+                        <li> In a large bowl, stir together flours, sugar, cinnamon, baking powder, baking soda and salt. Stir in carrots, apples and raisins. Stir in apple butter mixture until just moistened. Spoon the batter into the prepared muffin cups, filling them about 3/4 full.</li>
+                        <li> In a small bowl, combine walnuts and wheat germ; sprinkle over the muffin tops.</li>
+                        <li> Bake at 375 degrees F (190 degrees C) for 15 to 20 minutes, or until the tops are golden and spring back when lightly pressed.</li>
+                        </ol>
+                    </div>
+
+                    <div >
+                        <h4>Notes:</h4>
+                        <p>&quot;This muffin has a little bit of everything - carrots, raisins, apple butter, wheat germ, nuts. A perfect start for your day!&quot;</p>
+
+                        <ul>
+                            <li>Prep Time: 15 Minutes</li>
+                            <li>Cook Time: 20 Minutes</li>
+                            <li>Ready In: 35 Minutes</li>
+                            <li>Servings: 18</li>
+                        </ul>
+
+                    </div>
+
+
+                </article>
+
+
+
       </section>
     <script src="jquery-3.2.1.js"></script>
     <script src="js/script.js"></script>
