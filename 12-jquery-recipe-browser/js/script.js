@@ -10,12 +10,3 @@ $(document).ready(function(){
 
 // end document ready function
 });
-
-
-
-//
-//
-// $(".recipeButton").click(function (evt) {
-//   $(".recipe").fadeOut( 1000 );
-//   $("#" + $(this).data("rel")).fadeIn( 1000 )
-// });
