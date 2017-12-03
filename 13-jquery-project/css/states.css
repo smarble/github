@@ -1,0 +1,67 @@
+/*javascript class: Week 13 Assignment*/
+/*
+
+*/
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.title{
+  color: black;
+  margin-bottom: -30%;
+  font-size: 7em;
+}
+
+.instructions{
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: black;
+  text-align: center;
+}
+
+.state-box{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: inline-block;
+  width: 100%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+.pic-state {
+  width: 25%;
+}
+
+.instructions{
+  font-size: 3em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: black;
+}
+
+.revealedCapital{
+  font-size: 2em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: magenta;
+  text-align: center;
+}
