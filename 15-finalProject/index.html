@@ -1,0 +1,134 @@
+<!-- Week 15 Final
+HTML leveraged from provided starter code for lesson Week 11-->
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Wood Lake Nature Center</title>
+        <meta name="description" content="">
+        <!-- responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="colorbox/example4/colorbox.css" type="text/css" media="all">
+    </head>
+
+    <body>
+      <div id="header">
+        <h1 id="headerh1">Wood Lake Nature Center</h1>
+        <div id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li> | Another Menu Item<li>
+            <li><a href="#">About Us</a></li>
+            <li> | </li>
+            <li><a href="#">Products</a></li>
+            <li> | </li>
+            <li><a href="#">Services</a></li>
+            <li> | </li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="page">
+        <div id="slideShow">
+          <h1>Slide show goes here</h1>
+
+<!-- BEGIN first colorbox example -->
+
+          <div role="divHoldsColorbox">
+            <a class='gallery' href='img/1.jpg'>
+              <img src ='img/1.jpg' alt=photo of Woodlake width="70" height="70" border="0"/></a>
+            <p>Photo_1</p>
+            <a class='gallery' href='img/1.jpg'>
+              <img src ='img/2.jpg' alt=photo of Woodlake width="70" height="70" border="0"/></a>
+            <p>Photo_2</p>
+            <a class='gallery' href='img/1.jpg'>
+              <img src ='img/3.jpg' alt=photo of Woodlake width="70" height="70" border="0"/></a>
+              <p>Photo_3</p>
+            <a class='gallery' href='img/1.jpg'>
+              <img src ='img/4.jpg' alt=photo of Woodlake width="70" height="70" border="0"/></a>
+              <p>Photo_4</p>
+            <a class='gallery' href='img/1.jpg'>
+              <img src ='img/5.jpg' alt=photo of Woodlake width="70" height="70" border="0"/></a>
+              <p>Photo_5</p>
+       		</div>
+
+<!-- end first colorbox example -->
+
+        </div>
+          <div id="content">
+              <div id="article1" class="allSeasonalArticles">
+                  <h1>Year Round</h1>
+                  <div class="entry">
+                      <p>This information is year round. <a href="#">Donec neque purus</a>, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum <a href="#">blandit</a> augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum <a href="#">massa aliquet nulla</a>, non elementum mi elit a mauris.</p>
+                  </div>
+              </div>
+
+              <div id="article2" class="allSeasonalArticles article2345">
+                  <h1>Summer</h1>
+                  <div class="entry">
+                      <p>This information is specific to Summer. <a href="#">Donec neque purus</a>, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum <a href="#">blandit</a> augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum <a href="#">massa aliquet nulla</a>, non elementum mi elit a mauris.</p>
+                  </div>
+              </div>
+
+              <div id="article3" class="allSeasonalArticles article2345">
+                  <h1>Fall</h1>
+                  <div class="entry">
+                      <p>This information is specific to Fall. Donec a ante. <a href="#">Donec neque purus</a>, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum <a href="#">blandit</a> augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum <a href="#">massa aliquet nulla</a>, non elementum mi elit a mauris.</p>
+                  </div>
+              </div>
+
+              <div id="article4" class="allSeasonalArticles article2345">
+                  <h1>Winter</h1>
+                  <div class="entry">
+                      <p>This information is specific to winter. Donec a ante. <a href="#">Donec neque purus</a>, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum <a href="#">blandit</a> augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum <a href="#">massa aliquet nulla</a>, non elementum mi elit a mauris.</p>
+                  </div>
+              </div>
+
+              <div id="article5" class="allSeasonalArticles article2345">
+                  <h1>Spring</h1>
+                  <div class="entry">
+                      <p>This information is specific to Spring. <a href="#">Donec neque purus</a>, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum <a href="#">blandit</a> augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum <a href="#">massa aliquet nulla</a>, non elementum mi elit a mauris.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="sidebar">
+              <div id="sidebar-content">
+                  <ul>
+                      <li id="sidebar_content_1">
+                          <h2>Seasonal Information</h2>
+                          <ul>
+                              <li><a href="#" data-rel="#article1">Year Round</a></li>
+                              <li><a href="#" data-rel="#article2">Summer</a></li>
+                              <li><a href="#" data-rel="#article3">Fall</a></li>
+                              <li><a href="#" data-rel="#article4">Winter</a></li>
+                              <li><a href="#" data-rel="#article5">Spring</a></li>
+
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+      </div>
+
+      <div id="footer">
+          <p>This is the footer</p>
+      </div>
+      <div id="footer2">
+          <p>This is the footer</p>
+      </div>
+      <div id="footer3">
+          <p>This is the footer</p>
+      </div>
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="colorbox/jquery.colorbox-min.js"></script>
+  </body>
+</html>
