@@ -23,10 +23,14 @@ $(document).ready(function(){
     //this is the same as asking the line above
     // console.log("anything4="+ article)
   });
-
+// Using the Colorbox plug for images
   $(function() {
       "use strict";
       $('a.gallery').colorbox();
-
   });
+  $('.colorBox').colorbox({
+     scalePhotos: true,
+     maxWidth: '100%'
+});
+
 });

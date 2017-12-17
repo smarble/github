@@ -161,6 +161,11 @@ text-decoration: underline;
   margin-top: 3%;
 }
 
+#colorbox {
+  width: 500px;
+  height: 500px;
+}
+
 #footer {
 clear: both;
 height: 50px;
