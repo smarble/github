@@ -1,0 +1,197 @@
+/*Week 15 Final*/
+/*leveraged from provided starter style sheet for lesson Week 11 */
+
+
+/*border-box resets 1 of 2*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*border-box resets 2 of 2*/
+html {
+  box-sizing: border-box;
+}
+body {
+margin: 0px;
+padding: 0px;
+font: 12px Arial, Helvetica, sans-serif;
+color: #003764;
+}
+
+h1, h2, h3 {
+margin-top: 0px;
+}
+
+a {
+color: #175500;
+}
+
+a:hover {
+text-decoration: none;
+color: #339999;
+}
+
+#header {
+height: 150px;
+margin: 0px auto;
+background-color: #76bd22;
+padding-top:20px;
+padding-left:20px;
+}
+
+#headerh1 {
+  color: #003764;
+  font-size: 3em;
+}
+
+#header a {
+text-decoration: none;
+color: #FFFFFF;
+}
+
+#header h1 {
+/*float:left;*/
+}
+
+#menu {
+/*float: right;*/
+background-color: black;
+/*margin: 30px 0 0 0;*/
+}
+
+#menu ul {
+margin: 0px 0 0 0;
+padding: 0px 0px 0px 0px;
+list-style: none;
+line-height: normal;
+background-color: black;
+display: inline;
+}
+
+#menu li {
+float: left;
+margin: 0px 0px 0px 1px;
+}
+
+#menu a {
+display: block;
+width: auto;
+height: 28px;
+padding: 12px 20px 0px 20px;
+}
+
+#menu a:hover {
+text-decoration: underline;
+}
+
+#page {
+width: 900px;
+margin: 0px auto;
+padding: 30px 0px;
+}
+
+#slideShow {
+  height: 300px;
+  background-color: #f5f4f2;
+  text-align: center;
+  margin: 1.5% auto 10% auto;
+}
+
+#content {
+float: left;
+width: 570px;
+width: 63%;
+}
+
+.post {
+margin: 0px 0px 30px 0px;
+}
+
+.post .title {
+margin: 0px;
+padding: 0px 0px 5px 0px;
+border-bottom: #BFC9AE solid 1px;
+color: #003764;
+}
+
+.post .title a {
+color: #003764;
+text-decoration:none;
+}
+
+#sidebar {
+float: right;
+width: 300px;
+}
+
+#sidebar-content {
+padding: 20px;
+}
+
+#sidebar ul {
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+#sidebar li ul {
+margin-bottom: 1.8em;
+padding-left: 20px;
+list-style: none;
+}
+
+#sidebar h2 {
+padding: 4px 20px;
+background-color: #76bd22;
+font-size: 2em;
+color: #FFFFFF;
+}
+
+#sidebar a {
+text-decoration: none;
+color: #003764;
+font-size: 2em;
+}
+
+#sidebar a:hover {
+text-decoration: underline;
+}
+
+.allSeasonalArticles {
+  margin-top: 3%;
+}
+
+#colorbox {
+  width: 500px;
+  height: 500px;
+}
+
+#footer {
+clear: both;
+height: 50px;
+margin: 0px auto 0px auto;
+color: #FFFFFF;
+background-color: #76bd22;
+}
+
+#footer p {
+margin: 0px;
+padding: 19px 0px 0px 0px;
+text-align: center;
+line-height: normal;
+font-size: smaller;
+}
+
+#footer2 {
+  height: 10%;
+  background-color: #003764;
+  margin: 0px;
+  padding: 19px 0px 0px 0px;
+}
+
+#footer3 {
+  height: 10%;
+  background-color: #f5f4f2;
+  margin: 0px;
+  padding: 19px 0px 0px 0px;
+}
