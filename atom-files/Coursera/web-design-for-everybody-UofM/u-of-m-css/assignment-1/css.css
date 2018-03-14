@@ -1,0 +1,38 @@
+/*This is how comments are done*/
+* {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+h1{
+  color: #ffffff;
+  background: #B3B3B3;
+  font-size: 150%;
+}
+
+header{
+  background: #666666;
+  text-align: center;
+}
+
+nav{
+  font-variant: small-caps;
+  font-size: 150%;
+  font-family: Arial, "Times New Roman", serif;
+}
+
+h2{
+  color: #cc4ec0;
+  background: #110f58;
+}
+
+details{
+  font-style: italic;
+}
+
+summary{
+  font-style: normal;
+}
+
+footer{
+  background: #666666;
+}

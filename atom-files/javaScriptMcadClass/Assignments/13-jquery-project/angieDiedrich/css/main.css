@@ -1,0 +1,96 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #222;
+  line-height: 1.5em;
+}
+
+h1 {
+  color: white;
+  background-color: #A7226E;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  padding: .5em;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: 1em;
+}
+
+.recipe-buttons li {
+  padding: 1em;
+  margin: 2em;
+  list-style: none;
+}
+
+a {
+  color: black;
+  font-size: 1.5em;
+  margin: 1em;
+  text-decoration: none;
+}
+
+li a {
+  padding: 1em;
+  margin: 2em;
+}
+
+#recipe1, #recipe6 {
+  background-color: #EC2049;
+}
+
+#recipe2, #recipe7 {
+  background-color: #F26B38;
+}
+
+#recipe3 {
+  background-color: #F7Db4F;
+}
+
+#recipe4 {
+  background-color: #2F9599;
+}
+
+#recipe5 {
+  background-color: #A7226E;
+}
+
+.modal-content {
+  padding: 1em 2em;
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.modal-content ul li {
+  list-style: none;
+}
+
+.modal-content ol {
+  width: 500px;
+  margin: auto;
+}
+
+blockquote {
+  color: #A7226E;
+  padding: .5em;
+  margin: 1em auto;
+  font-size: 1.5em;
+  width: 400px;
+  font-style: italic;
+}

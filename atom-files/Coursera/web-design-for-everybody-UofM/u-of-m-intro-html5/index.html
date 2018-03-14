@@ -1,0 +1,88 @@
+<!--Notes:-make sure the page validates.
+-Use a "main" and a "footer" in the body for the minimum
+requirements of accessability.
+- Favicons or logos are tiny icons in your title tab. They go in the head section.
+You cannot use jpeg or giffs, the files must be a special icon image or png-->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"><!--meta viewport tag-->
+    <title>My first page Coursera</title>
+    <link rel="icon"
+          type="image/png"
+          href="imgs/wd4elogo.png">
+    <link rel="stylesheet"
+          type="text/css"
+          href="css.css" />
+  </head>
+
+  <body>
+    <main>
+      <!--an image as a link-->
+      <a href="http://www.redcross.org">
+        <img src = "http://www.redcross.org/images/redcross-logo.png"
+             alt = "Red Cross Logo"/>
+      </a>
+      <p>Hello World! &nbsp; &lt; &gt; &amp; &quot; &apos;
+         &cent; &pound; &yen; &euro; &copy; &reg;
+      </p>
+      <!--putting an image in a figure-->
+      <figure>
+        <img src = "imgs/Astabula.jpg"
+             alt = "My house"
+             width = "50%">
+        <figcaption>Default image size</figcaption>
+      </figure>
+      <table border = "1">
+        <tr>
+          <th>Child's Name:</th><th>Parent's Name:</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Catherine</td><td>Michael McCarthy</td>
+        </tr>
+        <tr>
+          <td>Colleen McCarthy</td>
+        </tr>
+        <tr>
+          <td>Maggie</td><td>Scheila Smith</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Edward</td><td>Catherine Howard</td>
+        </tr>
+        <tr>
+          <td>Jeff Howard</td>
+        </tr>
+      </table>
+
+<hr>
+
+      <table border = "1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings for holiday!</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+    <td rowspan="2">$50</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+
+    </main>
+    <footer>
+      <p>This is a footer. Woopie!!!
+      </p>
+    </footer>
+  </body>
+
+  </html>

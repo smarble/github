@@ -1,0 +1,9 @@
+From lynda.com flexbox videos:
+https://www.lynda.com/CSS-tutorials/Defining-flex-elements/116352/139386-4.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aflexbox%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
+======================================================
+
+Flexbox First Look
+Welcome to Flexbox First Look! The Flexible Layout Box Model (or Flexbox as it is more commonly known) is just one of the many CSS specifications under development by the W3C to address the current shortcomings in layout capabilities. Flexbox is well suited for arranging and aligning elements along a single axis, and creating flexible elements within a defined container. It's not particularly good at handling complex layouts, or controlling elements along multiple axes. As such, it's likely that Flexbox will be used in conjunction with other layout models such as CSS Grid Layout. While layout models like Grid Layout will handle overall page organization, Flexbox will be used to control the layout of discreet regions or UI components.
+
+Defining flex containers
+To use Flexbox, you set a parent container's display property to display: flex. This will make all direction children of the parent element flex items that can be controlled through flex properties. To set the main axis for flex items, use the flex-direction property. To enable multi-line flex containers, use the flex-wrap property. To declare both, use the flex-flow shorthand.

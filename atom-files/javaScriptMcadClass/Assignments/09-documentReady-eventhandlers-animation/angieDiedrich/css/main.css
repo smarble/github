@@ -1,0 +1,38 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: orange;
+}
+
+h1 {
+  color: green;
+  padding: 5rem;
+  font-size: 4em;
+  border: black solid 2px;
+  margin: 1rem;
+}
+
+#mainDIV, #mainDIV2 {
+  color: black;
+  background-color: green;
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  font-size: 5em;
+}
+
+button {
+  font-size: 2em;
+  margin: 3rem 0;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: orange;
+  border: green 3px solid;
+}

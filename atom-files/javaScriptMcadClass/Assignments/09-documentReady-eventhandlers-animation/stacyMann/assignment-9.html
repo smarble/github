@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="../main.css" />
+
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+        //$ is an alias for jquery.
+        //("document").ready ensures the DOM is ready for JavaScript code to execute.
+        $("document").ready(function() {
+            //.html is a jquery function that replaces inner html content.
+            //"#content" selects the html element with id of "content".
+            $("#content").html("<p>Halloween is an annual holiday, celebrated each year on October 31, that has roots in age-old European traditions. It originated with the ancient Celtic festival of Samhain, when people would light bonfires and wear costumes to ward off ghosts. In the eighth century, Pope Gregory III designated November 1 as a time to honor all saints; soon, All Saints Day incorporated some of the traditions of Samhain. The evening before was known as All Hallows Eve, and later Halloween. Over time, Halloween evolved into a day of activities like trick-or-treating and carving jack-o-lanterns. Around the world, as days grow shorter and nights get colder, people continue to usher in the season with gatherings, costumes and sweet treats. Source: www.history.com/topics/halloween/history-of-halloween</p>");
+        });
+    </script>
+</head>
+
+<body>
+    <h1>History of Halloween</h1>
+    <div id="content">
+        <p>It snowed last week but Halloween hasn't even arrived yet!</p>
+    </div>
+</body>
+
+</html>

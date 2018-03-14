@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css" link="style.css"></style>
+    <title>Date Deck</title>
+    <link rel = "stylesheet"   type = "text/css"   href = "style.css"/>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../jquery.colorbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script src="jquery-3.2.1.js"></script>
+
+    </head>
+  <body>
+      
+      <div id = "all" align="center">
+          
+      <img id="logo" src="images/DateDeck.png" alt="date deck logo" style="height:300px; width:300px">
+
+
+      <header class="nav">
+        <div id="navbar">
+          <ul>
+            <li><a href="#date">About</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+       </div>
+      </header>
+
+<a id="date" class="smooth"></a>
+    <section id="page1">
+    <div class="container">
+    <img class="left"  src="images/sale.jpg" alt="Sale">
+    <p>Hey there! These dating prompts were originally conceived as a personal gift on Valentines Day 2016. After enjoying many of the dates together as a couple, we decided to share the fun! We just recently took the deck and redesigned it into its current iteration, and we're extremely happy with the end results. We can't wait to start sending these out into the world and hopefully hearing about the creative dates that ensue. Happy dating!</p>
+    </div>
+        
+</section>
+
+<a id="demo" class="smooth"></a>
+<section id="page2">
+    <h1>Sample Dates</h1>
+    <p>Click one of the cards to reveal a sample date!</p>
+    <ul class="dates">
+		<li><p class="red"><a class="group4" href="images/dates/Social_Dates.png" title="Home Team"><img src="images/cards/dd.jpg"></a></p></li>
+		<li><p class="red"><a class="group4" href="images/dates/Social_Dates2.png" title="Home Team"><img src="images/cards/dd.jpg"></a></p></li>
+		<li><p class="red"><a class="group4" href="images/dates/Social_Dates3.png"><img src="images/cards/dd.jpg"></a></p></li>
+    </ul>
+    <p class="red">Coming up with a great date idea can be tough... Leave it to Date Deck to spark the flame for you! With 52 cards and 52 dates, Date Deck has a new fun prompt for every week of the year. Don't ever settle for 'Dinner & a Movie' again! Date Deck is great for all types of daters, whether its a first date or a fifth anniversary.</p>
+    
+    <p class="red">Below you will find a selection of our dates that you can sort thru and preview.</p>
+</section>
+          
+<section id="page 3">
+ <form id="dates" onclick="checkbox()">
+    <div>
+      <input type="checkbox" id="dining" checked>
+      <label for="dining">Dining</label>
+    </div>
+    <div>
+      <input type="checkbox" id="stayHome" checked>
+      <label for="stayHom">Stay In</label>
+    </div>
+    <div>
+      <input type="checkbox" id="adventure" checked>
+      <label for="adventure">Adventure</label>
+    </div>
+  </form>
+  
+  <ul class="datesDemo">
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd10.jpg" alt="A-Z">
+        <h2 class="product-name" data-type="dining">A-Z</h2>
+    </li>
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd12.jpg" alt="Ten Poses">
+        <h2 class="product-name" data-type="stayHome">Ten Poses</h2>
+    </li>
+    <li><img class="product-image" src="images/cards/dd24.jpg" alt="New to You">
+        <h2 class="product-name" data-type="adventure">New To You</h2>
+    </li>
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd38.jpg" alt="Hobby Hub">
+        <h2 class="product-name" data-type="stayHome">Relive the Past</h2>
+    </li>
+          <li class="product-item">
+        <img class="product-image" src="images/cards/dd16.jpg" alt="DIY Rave">
+        <h2 class="product-name" data-type="stayHome">DIY Rave</h2>
+    </li>
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd14.jpg" alt="Off the Grid">
+        <h2 class="product-name" data-type="stayHome">Off the Grid</h2>
+    </li>
+          <li class="product-item">
+        <img class="product-image" src="images/cards/dd22.jpg" alt="Childhood">
+        <h2 class="product-name" data-type="dining">Childhood</h2>
+    </li>
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd66.jpg" alt="O-71">
+        <h2 class="product-name" data-type="adventure">O-71</h2>
+    </li>
+          <li class="product-item">
+        <img class="product-image" src="images/cards/dd88.jpg" alt="Playful Portrait">
+        <h2 class="product-name" data-type="stayHome">Playful Portrait</h2>
+    </li>
+    <li class="product-item">
+        <img class="product-image" src="images/cards/dd20.jpg" alt="Tourist Time">
+        <h2 class="product-name" data-type="dining">Tourist Time</h2>
+    </li>
+    </ul>
+  
+
+  
+<button id= more onclick="myFunction()"><h3> More Dates!</h3></button>
+
+ 
+
+
+<section id="page4">
+  <a id="contact" class="smooth"></a>  
+    <h2>Drop Us a Line!</h2>
+<form class="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+   Message:<br>
+    <input type="text" name="message" value="" style="height:200px; width:200px">
+  </form>
+  <input type="button" value="Submit">
+</section>
+    
+  
+<footer>
+    <section>
+        <p class="contact">
+        P. 563.543.7540<br>
+        E. ktschramm@yahoo.com<br></p>
+        <img src="images/dd_footer.jpg" alt="footer" style="max-width: 100%">
+      </section>
+</footer>
+    
+</div>
+          
+<script src="script.js"></script>
+
+</body>
+</html>

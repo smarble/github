@@ -1,0 +1,105 @@
+/*
+Portfolio main.css
+350px smallest phone
+700px smallest tablet
+1000px smallest desktop
+*/
+
+html {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: normal;
+}
+
+body {
+  margin: 10%;
+}
+
+.header {
+  /* Header fixed to top
+  position: fixed; */
+  margin: 6% 4% 6% 4%;
+}
+
+.name {
+  display: block;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.3em;
+
+}
+
+.menu {
+  padding: 0;
+  text-align: center;
+}
+
+.menuItems {
+  display: inline-block;
+  m argin: 0% 2% 0% 2%;
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #535050;
+  letter-spacing: 1px;
+}
+
+.menuBars {
+text-transform: none;
+}
+
+img {
+  width: 100%;
+  margin: 2%;
+}
+
+.about {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 699px) {
+
+}
+
+
+@media screen and (min-width: 700px) {
+  .name {
+    display: inline;
+    text-align: none;
+  }
+  .menu {
+    display: inline;
+    margin: 2% 2% 2% 10%;
+  }
+
+  img {
+    width: 100%;
+    margin: 4.5%;
+  }
+
+  .donutSelfieThumbnail {
+    width: 40%;
+  }
+
+  .beaverSeedArtThumbnail {
+    width: 40%;
+  }
+
+  .catTailsThumbnail {
+    width: 40%;
+  }
+
+
+  .phoneBoothThumbnail {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 1999px) {
+
+ }
+
+@media screen and (min-width: 1000px) {
+
+}

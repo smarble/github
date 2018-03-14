@@ -1,0 +1,48 @@
+
+html {background-color: #004040;}
+
+body {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;}
+
+
+/************************  LAMP ONLY CSS **/
+.lamp-on, .lamp-off{
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #3973b7;}
+
+.lamp-on{background-image: url("../img/on.png");}
+
+.lamp-off{background-image: url("../img/off.png");}
+
+
+
+/************************  BOX ONLY CSS **/
+.box-open, .box-closed{
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;}
+
+.box-open{background-image: url("../img/open.png");}
+
+.box-closed{background-image: url("../img/closed.png");}
+
+
+
+/****************************************/
+#lamp-text, #box-text{
+    text-align: center;
+    color: #ddd;
+    font-size: 35px;
+    letter-spacing: .02em;
+    font-family: sans-serif;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>flex ratios</title>
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+body {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+.flex-container {
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 1em 0;
+	border: 1px solid #333;
+}
+.flex1 {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.flex2 {
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+.flex3 {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Flexbox First Look</h1>
+<p>Welcome to Flexbox First Look! The <a href="http://www.w3.org/TR/css3-flexbox/" title="Flexbox">Flexible Layout Box Model</a> (or <strong>Flexbox</strong> as it is more commonly known) is <em>just one of the many</em> CSS specifications under development by the W3C to address the current shortcomings in layout capabilities. Flexbox is well suited for arranging and aligning elements along a single axis, and creating flexible elements within a defined container. It's not particularly good at handling complex layouts, or controlling elements along multiple axes. As such, it's likely that Flexbox will be used in conjunction with other layout models such as <a href="http://www.w3.org/TR/css3-grid-layout/" title="CSS Grid Layout">CSS Grid Layout</a>. While layout models like Grid Layout will handle overall page organization, Flexbox will be used to control the layout of discreet regions or UI components.</p>
+</header>
+<article>
+<h2>Controlling flexibility &amp; item size</h2>
+<p>To control the flexibility of items you can use the <strong>flex</strong> property. Flex is actually shorthand for the <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong> properties. Flex grow determines how a flex item should grow when space is available, while flex shrink controls how an item shrinks when there’s not enough positive space. Flex basis controls the initial size of the flex item. </p>
+<section class="flex-container">
+<div class="box flex1">
+<h3>one</h3>
+</div>
+<div class="box flex2">
+<h3>two</h3>
+</div>
+<div class="box flex3">
+<h3>three</h3>
+</div>
+</section>
+</article>
+</body>
+</html>

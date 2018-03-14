@@ -1,0 +1,141 @@
+/*notes
+* {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+notes*/
+
+
+html { box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+header{
+  text-align: center; /*centers in-line block elements*/
+  background-color: #b3b0b0;
+  background-image: url("../images/flywheel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3%;
+
+}
+
+body{
+  padding: 2% 2%;
+  margin: 10%;
+}
+
+
+h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 90%;
+  padding-top: 1%;
+
+}
+
+h2{
+  margin-top: 0px;
+  color: #000000;
+}
+
+h1, h2{
+  text-transform: uppercase;
+}
+
+nav>a{
+  text-align: center;
+  color: #060606;
+  background-color: #d8d6d6;
+  display: inline-block;
+  margin: auto 10px;
+  border-radius: 7%;
+  text-decoration: none;
+  padding: 2% 6%;
+  opacity: 0.6;
+}
+
+aside>a{
+  display: block;
+  margin: 10px auto;
+}
+
+.left{
+  margin-right: 10px;
+  width: 20%;
+  height: 100vh;/*veiwport height*/
+  float: left;
+  background-color: #6b6d1e;
+}
+
+img{
+  display: block;
+  width: 75%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+}
+
+.active{
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+/*notes
+begin styling table
+notes*/
+
+table{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+td{
+  line-height: 2em;
+  /*background-color: #f0fbdd;*/
+  padding-left: 1%;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+th{
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  border-style: solid;
+  border-width: thin thin thick thin;
+  border-color: #52a3bf;
+  border-bottom: 3%;
+  line-height: 3em;
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#3d7340 5%, #5c860c 15%, #9e9e02 60%); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#3d7340 5%, #5c860c 15%, #9e9e02 60%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#3d7340 5%, #5c860c 15%, #9e9e02 60%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#3d7340 5%, #5c860c 15%, #9e9e02 60%); /* Standard syntax */
+  color: white;
+  background-color: #aac55a;
+  opacity: 1 !imprtant;
+}
+
+tr {
+  opacity: .8;
+}
+
+/*to alternate colors between even and odd*/
+tr:nth-child(odd){
+  background: #f0fbdd;
+}
+tr:nth-child(even){
+  background-color: #547913;
+  }
+
+  /*change background opacity with hover*/
+
+  tr:hover {
+    opacity: 1;
+  }
