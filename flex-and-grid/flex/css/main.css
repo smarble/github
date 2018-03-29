@@ -39,20 +39,52 @@ background-color: red;
   background-color: green;
 }
 
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+
+.pink {
+  background-color: pink;
+}
+
+.black {
+  background-color: black;
+}
+
 
 .contentBox3 {
-  border: 1px solid orange;
+  border: 1px solid black;
   display: flex;
-  height: 75vh;
+  height: 600px;
   justify-content: center;
   align-items: center;
 }
 
+
 .orange {
-  /* height = none */
-  line-height: 20vh;
-  background-color: orange;
   width: 20%;
+  height: 15vw;
   font-size: 5vw;
   text-align: center;
+}
+
+.contentBox4 {
+  border: 1px solid black;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  font-size: 5vw;
 }

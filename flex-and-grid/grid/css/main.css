@@ -1,0 +1,57 @@
+/* Grid Demo from Grid Garden Game */
+
+.contentBox1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 10%;
+
+}
+
+.contentBox2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10%;
+}
+
+.red {
+background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.black {
+  background-color: black;
+}
+
+.red, .blue, .yellow, .green, .orange, .purple, .pink, .black {
+  padding: 10%;
+  margin: 10%;
+}
+
+
+
+.contentBox3 {
+
+}
