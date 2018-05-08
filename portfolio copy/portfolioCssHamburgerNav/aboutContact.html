@@ -1,0 +1,159 @@
+<!--Notes:
+Portfolio aboutContact.html
+<a href="#">This link doesn't go anywhere.</a>
+    -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--meta viewport tag-->
+    <title>Sandra Marble</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  </head>
+
+  <body>
+
+    <div class="aboutContainer">
+
+      <div class="nav">
+        <div class="nav-header">
+          <div class="nav-title">
+          Sandra Marble
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+          <a href="index.html" target="_blank">Home</a>
+          <a href="aboutContact.html" target="_blank">About</a>
+          <a href="#" target="_blank">Work</a>
+          <a href="aboutContact.html" target="_blank">Contact</a>
+        </div>
+      </div>
+
+    <!-- <header class="header">
+      <h1 class="name">Sandra Marble</h1>
+      <ul class="menu">
+        <a href="index.html">
+          <li class="menuItems">Home</li>
+        </a>
+        <li class="menuItems menuBars">l</li>
+        <a href="aboutContact.html">
+          <li class="menuItems">About</li>
+        </a>
+        <li class="menuItems menuBars">l</li>
+        <a href="#">
+          <li class="menuItems">Work</li>
+        </a>
+        <li class="menuItems menuBars">l</li>
+        <a href="aboutContact.html">
+          <li class="menuItems">Contact</li>
+        </a>
+      </ul>
+    </header> -->
+
+      <div class="aboutContent">
+        <div class="picAndBio">
+          <div class="pic">
+            <img class="bioPic" src="images/donutSelfie.jpg" alt=picture of Sandra with donut/>
+          </div>
+
+          <div class="bio">
+            <p class="bioText">
+            Here is a delightful and consise bio about Sandra Marble. Just a little background information about who I am and what I am doing, as well as what I would like to do in the future. Here is a delightful and consise bio about Sandra Marble. Just a little background information about who I am and what I am doing, as well as what I would like to do in the future.
+            </p>
+          </div>
+        </div>
+
+<!-- START OF CONTACT FORM------------------------ -->
+        <div class="ContactMeContainer">
+        <div style="text-align:center">
+          <h2>Say Hello</h2>
+          <p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php":</p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="lastname" placeholder="Email address...">
+
+
+              <label for="email">Email</label>
+
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <!-- END OF DIV ContactMeContainer -->
+        </div>
+
+<!-- END OF CONTACT FORM------------------------ -->
+
+
+
+
+
+
+      <!-- END OF DIV aboutContent -->
+      </div>
+
+    <!-- END OF DIV aboutContainer -->
+    </div>
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+
+    <div class="footer-left">
+      <p class="footer-links">
+      	<a href="#">Home</a>
+      					·
+      	<a href="#">Blog</a>
+      					·
+      	<a href="#">Pricing</a>
+      					·
+      	<a href="#">About</a>
+      					·
+      	<a href="#">Faq</a>
+      					·
+      	<a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; 2015</p>
+    </div>
+
+  </footer>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+
+
+<!--
+examples for later
+<a href="#">
+<img class="menu_icon" src="images/menu_button.png" alt="menu"></a> -->

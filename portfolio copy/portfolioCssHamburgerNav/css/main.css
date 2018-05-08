@@ -1,0 +1,374 @@
+/*
+Portfolio main.css
+350px smallest phone
+700px smallest tablet
+1000px smallest desktop
+select multiple classes: ,
+*/
+
+html {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: normal;
+  /* border box start --------------------- */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  /* border box end ---------------------*/
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  /* to center using margin: 0 auto; you must specify a width */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content {
+
+  /* center the side by side boxes within the container */
+  text-align: center;
+}
+
+.aboutContent {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1% 1% 10% 1%;
+}
+
+.boxes {
+  display: inline;
+  position: relative;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.text{
+  /* Centering= use the next four rules: position, top, left, transform */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5.0vw;
+  font-weight: lighter;
+  margin-top: -4.5%;
+  color: black;
+  padding: .2% 1%;
+}
+
+img {
+  /* if width goes over 60% in mobile/tablet size, it makes the body wider than the viewport: need to scroll horozontally */
+  width: 60%;
+  margin: 20%;
+}
+
+  .picAndBio {
+    margin-top: 25%;
+    text-align: center;
+  }
+
+
+
+
+
+/* ===================pop out menu================ */
+.nav {
+  /* translucent sticky nav bar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+  padding: 5%;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav-title {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #black;
+  padding: 0px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.ContactMeContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+@media (max-width:700px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 60% 30% 20% 20%;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  .nav > .nav-links {
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* ===================END pop out menu====== ========== */
+
+
+.pic {
+  /* background-image: url("images/donutSelfie.jpg"); */
+  display: inline-block;
+  width: 35%;
+  margin-bottom: 10%;
+}
+
+.bio {
+  padding: 5%;
+  font-weight: lighter;
+}
+
+.bioText {
+  font-size: 2.0vw;
+}
+
+
+
+/* START CONTACT INFO --------------------- */
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #595b5e;
+}
+
+
+
+
+
+
+
+/* END CONTACT INFO------------------------ */
+
+
+@media screen and (min-width: 601px) {
+
+  .name {
+    display: inline;
+    text-align: none;
+    font-size: 3vw;
+  }
+
+  .menu {
+    display: inline;
+    margin: 2% 2% 2% 10%;
+  }
+
+  .content {
+    margin: 12%;
+    text-align: center;
+  }
+
+  .bio {
+      display: inline-block;
+      width: 55%;
+      padding: 5%;
+      vertical-align: top;
+  }
+
+  .picAndBio {
+    text-align: center;
+  }
+
+  img {
+    margin:6% 4.5%;;
+  }
+
+  .thumbnail {
+    width: 30%;
+  }
+
+  .text {
+    font-size: 1.5vw;
+  }
+
+  .ContactMeContainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+}
+
+/* FOOTER START==================================== */
+
+.footer-distributed{
+	background-color: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  black;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+
+/* FOOTER END==================================== */
+
+@media screen and (max-width: 1999px) {
+
+
+ }
+
+@media screen and (min-width: 1000px) {
+
+  .nav-title {
+    font-size: 60px;
+
+}

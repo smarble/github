@@ -1,0 +1,142 @@
+/*
+Portfolio main.css
+350px smallest phone
+700px smallest tablet
+1000px smallest desktop
+select multiple classes: ,
+*/
+
+html {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: normal;
+  /* border box start --------------------- */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  /* border box end ---------------------*/
+}
+
+.container {
+  /* to center using margin: 0 auto; you must specify a width */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  /* Header fixed to top: position fixed, top:0, width 100 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+  padding: 5%;
+}
+
+.name {
+  display: block;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 6vw;
+
+}
+
+.menu {
+  padding: 0;
+  text-align: center;
+}
+
+.menuItems {
+  display: inline-block;
+  margin: 0% 2% 0% 2%;
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #535050;
+  letter-spacing: 1px;
+}
+
+.menuBars {
+text-transform: none;
+}
+
+.content {
+  margin-top: 35%;
+  /* center the side by side boxes within the container */
+  text-align: center;
+}
+
+.boxes {
+  display: inline;
+  position: relative;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.text{
+  /* Centering= use the next four rules: position, top, left, transform */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5.0vw;
+  font-weight: lighter;
+  margin-top: -4.5%;
+  color: black;
+  padding: .2% 1%;
+}
+
+img {
+  /* if width goes over 60% in mobile/tablet size, it makes the body wider than the viewport: need to scroll horozontally */
+  width: 60%;
+  margin: 20%;
+}
+
+
+@media screen and (max-width: 699px) {
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .name {
+    display: inline;
+    text-align: none;
+    font-size: 3vw;
+  }
+
+  .menu {
+    display: inline;
+    margin: 2% 2% 2% 10%;
+  }
+
+  .content {
+    margin-top: 12%;
+  }
+
+  img {
+    margin:6% 4.5%;;
+  }
+
+  .thumbnail {
+    width: 30%;
+  }
+
+  .text {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media screen and (max-width: 1999px) {
+
+ }
+
+@media screen and (min-width: 1000px) {
+
+}
