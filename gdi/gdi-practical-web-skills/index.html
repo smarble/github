@@ -1,64 +1,126 @@
-<!-- RUBADUB DOGGIE -->
+
+<!-- RUBADUB DOGG -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rub A Dub Doggie</title>
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Gloria+Hallelujah|Gochi+Hand|Pangolin" rel="stylesheet">
+    <title>Rub A Dub Dogg</title>
+
+    <!-- ICONS FOR FOOTER -->
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
     <div class="page">
-      <header>
-        <h1 class="font4">Rub A Dub Doggie!</h1>
-        <img src="img/dog.jpg" alt="picture of a dog" class="dog picture" />
-          <nav class="topnav" id="myTopnav">
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-            <div class="dropdown">
-              <button class="dropbtn">Dropdown
-                <i class="fa fa-caret-down"></i>
-              </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-          </div>
-            <a href="#">About</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            <a href="#home"  class="active">Home</a>
-          </nav>
+
+      <header class="header">
+        <div class="headerLogo">
+        <h1>Rub A Dub<span>Dog</span></h1>
+        </div>
+        <!-- INPUT AND LABEL WORK TOGETHER FOR THE TOGGLING OF THE MOBILE MENU -->
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Salon & Spa</a></li>
+          <li><a href="#about">Self Service</a></li>
+          <li><a href="#careers">Contact Us</a></li>
+        </ul>
       </header>
-      <h1 class=font1>
-        Covered By Your Grace: font 1!
-      </h1>
-      <h2 class=font1>
-        Covered By Your Grace: font 1!
-      </h2>
-      <h1 class=font2>
-        Gochi Hand: font 2!
-      </h1>
-      <h2 class=font2>
-        Gochi Hand: font 2!
-      </h2>
-      <h1 class=font3>
-        Pangolin: font 3!
-      </h1>
-      <h2 class=font3>
-        Pangolin: font 3!
-      </h2>
-      <h1 class=font4>
-        Gloria Hallelujah: font 4!
-      </h1>
-      <h2 class=font4>
-        Gloria Hallelujah: font 4!
-      </h2>
-      <footer>
-        &copy; 2018 Practical Web Skills
-      </footer>
-    </div><!-- .wrapper -->
+
+
+      <div class=banner>
+        <div class="bannerText">
+          <h1>PAMPER YOUR POOCH</h1>
+          <p>AT RUB A DUB DOG</p>
+          <button class="woofButton">WOOF!</button>
+        </div>
+      </div>
+
+        <div class="contentHome">
+          <p class="homeBlurb">
+            Rub A Dub Dog is a store front groomery offering exceptional dog grooming services, performed by professionals with more than 35 years combined experience. Our #1 focus is to provide your pet with a comfortable, enjoyable experience.
+          </p>
+          <div class="content3Boxes">
+            <img class="homeIcons" src="img/soap.jpg" alt="soap illustration" />
+            <div>
+            <a href="#">Salon & Spa</a>
+            </div>
+          </div>
+
+          <div class="content3Boxes">
+          <img class="homeIcons" src="img/bath.jpg" alt="bath illustration" />
+          <a href="#">Self Service</a>
+          </div>
+
+          <div class="content3Boxes">
+          <img class="homeIcons" src="img/brush.jpg" alt="brush illustration" />
+          <a href="#">Book Now</a>
+          </div>
+        </div>
+
+
+      <footer class="footer-distributed">
+
+  			<div class="footer-left">
+
+  				<h3>Rub A Dub<span>Dog</span></h3>
+
+  				<p class="footer-links">
+  					<a href="#">Home</a>
+  					·
+  					<a href="#">Salon & Spa</a>
+  					·
+  					<a href="#">Self Service</a>
+  					·
+  					<a href="#">Contact Us</a>
+  				</p>
+
+  				<p class="footer-company-name">Sandra Marble Student Project &copy; 2018</p>
+  			</div>
+
+  			<div class="footer-center">
+
+  				<div>
+  					<i class="fa fa-map-marker"></i>
+  					<p><span>3500 Central Ave SE </span> Albuquerque, NM 87106</p>
+  				</div>
+
+  				<div>
+  					<i class="fa fa-phone"></i>
+  					<p>+1 555 123456</p>
+  				</div>
+
+  				<div>
+  					<i class="fa fa-envelope"></i>
+  					<p><a href="mailto:rubadubdogg.com">rubadubdogg.com</a></p>
+  				</div>
+
+  			</div>
+
+  			<div class="footer-right">
+
+  				<p class="footer-company-about">
+  					<span>About the company</span>
+  					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+  				</p>
+
+  				<div class="footer-icons">
+
+  					<a href="#"><i class="fa fa-facebook"></i></a>
+  					<a href="#"><i class="fa fa-twitter"></i></a>
+  					<a href="#"><i class="fa fa-linkedin"></i></a>
+  					<a href="#"><i class="fa fa-github"></i></a>
+
+  				</div>
+
+  			</div>
+
+  		</footer>
+
+
     <script src="js/script.js">
     </script>
   </body>
