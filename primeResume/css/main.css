@@ -1,0 +1,67 @@
+/*
+Portfolio main.css
+350px smallest phone
+700px smallest tablet
+1000px smallest desktop
+select multiple classes: ,
+*/
+
+html {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: normal;
+    /* border box start --------------------- */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    /* border box end ---------------------*/
+}
+
+.container {
+    /* to center body using margin: 0 auto; you must specify a width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    /* Header fixed to top: position fixed, top:0, width 100 */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+    padding: 5%;
+}
+.photo {
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.name {
+    /*margin-left: 10%;*/
+    /*font-weight: lighter;*/
+    /*text-align: center;*/
+    font-size: 6vw;
+}
+
+/*begin stying for two column layout*/
+.flex_container {
+    display: flex;
+    width: 100%;
+}
+.flex_item_left {
+    word-break: break-word;
+    padding-top: 30%;
+    height: 100vh;
+    width: 35%;
+    background: #c6cc00;
+}
+.flex_item_right {
+    padding-top: 30%;
+    height: 100vh;
+    flex: 1;
+
+}
