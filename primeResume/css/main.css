@@ -34,34 +34,38 @@ html {
     opacity: 0.9;
     padding: 5%;
 }
+
 .photo {
     float: left;
+    margin-left: 3%;
     width: 20%;
     border-radius: 50%;
 }
 
 .name {
-    /*margin-left: 10%;*/
-    /*font-weight: lighter;*/
-    /*text-align: center;*/
     font-size: 6vw;
+    padding-left: 45%;
 }
 
-/*begin stying for two column layout*/
+ul {
+    list-style-type: none;
+}
+
+/*begin stying for two column Flex layout*/
 .flex_container {
     display: flex;
     width: 100%;
 }
 .flex_item_left {
     word-break: break-word;
-    padding-top: 30%;
-    height: 100vh;
+    padding: 30% 5% 10% 7%;
+    height: 100%;
     width: 35%;
-    background: #c6cc00;
+    background: #cddc39;
 }
 .flex_item_right {
-    padding-top: 30%;
+    padding: 30% 13% 5% 10%;
     height: 100vh;
     flex: 1;
-
 }
+/*end stying for two column Flex layout*/
