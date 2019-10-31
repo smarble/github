@@ -1,18 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// Create a function that returns the total number of parameters passed in.
+//
+// Examples
+// numberArgs("a", "b", "c") ➞ 3
+//
+// numberArgs(10, 20, 30, 40, 50) ➞ 5
 
-function makeDoggy(e) {
-    // Call this extremely useful function on an <img>.
-    // The <img> will become a picture of a doggy.
-    e.target.setAttribute('src', 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg');
-    e.target.setAttribute('alt', 'doggy');
+
+function numberArgs() {
+    console.log(arguments.length);
 }
 
-const kitty = (
-    <img
-onClick = {makeDoggy};
-src="https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg"
-alt="kitty" />
-);
-
-ReactDOM.render(kitty, document.getElementById('app'));
+numberArgs(1, 2, 3)

@@ -1,0 +1,67 @@
+<!--How to add React to a website without Webkit
+https://medium.com/@to_pe/how-to-add-react-to-a-simple-html-file-a11511c0235f-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>ReactFirstWebsite</title>
+    <!-- Link fonts before css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+
+<h1 id="appear"></h1>
+
+
+<div id="root"></div>
+
+<!--render React library into a DOM-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<!--render React-Dom library into a DOM-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<!--library that enables JSX and ES6-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
+<!--write your javascript and react code in a classical <script> block but with a twist: declare it as text/babel to enable transpilation from ES6 to ES5-->
+<script type="text/babel">
+
+    // expression that returns true 50%
+    const fiftyFifty = Math.random() < 0.5;
+
+    class TonightsPlan extends React.Component{
+
+        render(){
+            let a;
+            if (fiftyFifty){
+                a = <h1>Tonight I'm going out WOOO</h1>;
+            }else{
+                a = <h1>Tonight I'm going to bed WOOO"</h1>;
+            }
+
+            return a;
+        }
+
+    }
+
+    ReactDOM.render(
+        <TonightsPlan />,
+        document.getElementById('root')
+    );
+
+</script>
+
+
+
+
+<!-- Load jquery before javascript -->
+<!-- <script src="jquery-3.2.1.js"></script> -->
+<script src="js/script.js"></script>
+<!-- Load plug ins after javascript -->
+</body>
+
+
+
+
+

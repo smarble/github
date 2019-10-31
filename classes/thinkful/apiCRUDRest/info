@@ -1,0 +1,48 @@
+Thinkful Webinar | APIs, CRUD, Rest and Other Buzzwords
+SATURDAY, AUGUST 24 2019
+
+Class resources:
+http://bit.ly/api-tf
+
+Starter code in Git and Codepen:
+https://github.com/chrisbridges/showLocalWeather/tree/take_home_problem
+https://codepen.io/smarble/pen/bGbqEXm
+
+Mid code in Codepen:
+https://codepen.io/smarble/pen/KKPWVOY?editors=1112
+
+Solution Code in Codepen:
+https://codepen.io/smarble/pen/rNByeBa?editors=1112
+
+
+Recording of webinar:
+
+
+Tool to test your Api's
+https://www.getpostman.com/
+
+API Restful
+http://maps.google.com/api/v1.3/street
+-these use URLs
+
+Windows API and OSX
+allows you to interact with the operating system
+
+
+
+
+Info about API's
+Frameworks/SDKs/Libraries
+-Java SDK
+-Spring
+-
+
+CRUD
+create
+release
+update
+delete
+
+
+AJAX
+allows you to change just part of a web page without refreshing the entire page.

@@ -1,0 +1,64 @@
+<!--How to add React to a website without Webkit
+https://medium.com/@to_pe/how-to-add-react-to-a-simple-html-file-a11511c0235f-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>ReactFirstWebsite</title>
+    <!-- Link fonts before css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+
+<h1 id="appear"></h1>
+
+
+<div id="root"></div>
+
+<!--render React library into a DOM-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<!--render React-Dom library into a DOM-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<!--library that enables JSX and ES6-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
+
+
+<!--write code in a classical <script> block but with a twist: declare it as text/babel to enable transpilation from ES6 to ES5-->
+<script type="text/babel">
+
+    // inside the code block declare a simple React component that renders as a <button> tag
+    class Greeting extends React.Component {
+        hello() {
+            document.getElementById("appear").innerHTML = "Hello World";
+        }
+
+        render() {
+            return (<button onClick={this.hello}>Click Me</button>);
+        }
+    }
+
+    // renders the component tree (in this case just a single component) into the element with the ID "root"
+    ReactDOM.render(
+        <Greeting />,
+        document.getElementById('root')
+    );
+</script>
+
+
+
+
+<!-- Load jquery before javascript -->
+<!-- <script src="jquery-3.2.1.js"></script> -->
+<script src="js/script.js"></script>
+<!-- Load plug ins after javascript -->
+</body>
+
+</html>
+
+
+
+
+
